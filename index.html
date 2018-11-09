@@ -1,5 +1,65 @@
+<!doctype html>
 <html>
-<body>
-Początek :)
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body> 
+<p>Wszystkie grupy</p>
+
+<ul>
+<li>git config --global user.name ""
+<ul>
+<li>ustawia globalną nazwę użytkownika </li>
+</ul></li>
+<li>git reset HEAD
+<ul>
+<li>kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z --hard również usuwa zmiany z plików)</li>
+</ul></li>
+<li>gitk -all</li>
+<li>git branch --merged</li>
+<li>git branch "branch" "commit hash" </li>
+<li>git pull "remote" "branch"</li>
+<li>git config --global user.email ""
+<ul>
+<li>ustawia globalną wartość email</li>
+</ul></li>
+<li>git diff --staged
+<ul>
+<li>porównuje zmiany  </li>
+</ul></li>
+<li>git checkout -b "branch"
+<ul>
+<li>to samo co git checkout ale do tego przechodzi na nowo utworzony branch (zamiast przechodzenia do stanu detached)</li>
+</ul></li>
+<li>git log --graph --all</li>
+<li>git branch -d "branch"</li>
+<li>git fetch "remote" "branch"
+<ul>
+<li>ściąga zmiany wprowadzone na serwerze remote na gałęzi branch lecz jeszcze nich nie wprowadza (do tego należy wywołać git merge lub git rebase)</li>
+</ul></li>
+<li>git config --global color.ui true</li>
+<li>git commit "filename"</li>
+<li>git branch -v</li>
+<li>git push "remote" "branch"</li>
+<li>git log "branch" --not "branch"</li>
+<li>git bisect (start, bad, good, reset)</li>
+<li>git commit -a -m ""</li>
+<li>git add .
+<ul>
+<li>rejestruje wszystkie ostatnio wprowadzone zmiany w danym folderze i podfolderach</li>
+</ul></li>
+<li>git checkout "branch"
+<ul>
+<li>przechodzi na podany branch </li>
+</ul></li>
+<li>git remote add "remote_name" "git url"
+<ul>
+<li>rejestruje nowy server z git'em którego można potem używać </li>
+</ul></li>
+<li>git blame -C "filename"</li>
+<li>git branch "name"</li>
+</ul>
 </body>
-</html> 
+</html>
