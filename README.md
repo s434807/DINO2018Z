@@ -20,31 +20,25 @@ Zadanie zaliczą te osoby, które łącznie:
  
  Lista komend do opisania:
  
-  * Grupa CC
+  * Wszystkie grupy
     * git config --global user.name ""
     * git reset HEAD
     * gitk -all
     * git branch --merged
     * git branch "branch" "commit hash"
     * git pull "remote" "branch"
-    
-  * Grupa CE
     * git config --global user.email ""
     * git diff --staged
     * git checkout -b "branch"
     * git log --graph --all
     * git branch -d "branch"
     * git fetch "remote" "branch"
-  
-  * Grupa CF
     * git config --global color.ui true
     * git commit "filename"
     * git branch -v
     * git push "remote" "branch"
     * git log "branch" --not "branch"
     * git bisect (start, bad, good, reset)
-  
-  * Grupa CG
     * git commit -a -m ""
     * git add .
     * git checkout "branch"
