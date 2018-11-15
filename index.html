@@ -21,13 +21,14 @@
 <li>git branch --merged</li>
 <li>git branch "branch" "commit hash" </li>
 <li>git pull "remote" "branch"</li>
+<ul><li>Pobiera zmiany z podanej gałęzi na  podanym zdalnym repozytorium.Przydatne gdy chcemy pobrać aktualne zmiany z zdalnej gałęzi. </li></ul>
 <li>git config --global user.email ""
 <ul>
 <li>Ustawia globalną wartość email.</li>
 </ul></li>
 <li>git diff --staged
 <ul>
-<li>Porównuje zmiany.</li>
+<li>Pozwala zobaczyć zawartość poczekalni, która trafi do repozytorium z najbliższym zatwierdzeniem. </li>
 </ul></li>
 <li>git checkout -b "branch"
 <ul>
@@ -41,9 +42,8 @@
 </ul></li>
 <li>git config --global color.ui true</li>
 <li>git commit "filename"</li>
-    <ul>
-    <li>Zatwierdza zmiany w pliku filename. </li>
-    </ul>
+<ul><li>dodaje zmiany wprowadzone w podanym pliku (tu: "filename") do aktualnej zawartości indeksu i pyta użytkownika o wprowadzenie wiadomości, opisującej wprowadzone zmiany
+</ul></li>
 <li>git branch -v</li>
 <li>git push "remote" "branch"</li>
 <li>git log "branch" --not "branch"</li>
@@ -53,6 +53,8 @@
     <li>Zatwierdza zmiany we wszystkich plikach katalogu roboczego. Dodatkowo dodaje pustą wiadomość jako komentarz do commita. </li>
     </ul>
 <li>git add .
+<ul><li>kopiuje wszystkie pliki (w ich aktualnym stanie) z katalogu robczego do przechowalni (stage)
+</li></ul>
 <ul>
 <li>Rejestruje wszystkie ostatnio wprowadzone zmiany w danym folderze i podfolderach.</li>
 </ul></li>
@@ -66,6 +68,7 @@
 </ul></li>
 <li>git blame -C "filename"</li>
 <li>git branch "name"</li>
+
 </ul>
 </body>
 </html>
