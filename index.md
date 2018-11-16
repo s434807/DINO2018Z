@@ -21,6 +21,7 @@ Wszystkie grupy
  - git config --global color.ui true
  - git commit "filename"
  - git branch -v
+   - pozwala obejrzeć ostatni zatwierdzony zestaw zmian na każdej z gałęzi
  - git push "remote" "branch"
  - git log "branch" --not "branch"
  - git bisect (start, bad, good, reset)

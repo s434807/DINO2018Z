@@ -9,56 +9,54 @@
 <p>Wszystkie grupy</p>
 
 <ul>
-<li>git config &ndash;global user.name &ldquo;&rdquo;
-
+<li>git config --global user.name ""
 <ul>
-<li>ustawia globalną nazwę użytkownika</li>
-</ul>
-</li>
+<li>Ustawia globalną nazwę użytkownika. </li>
+</ul></li>
 <li>git reset HEAD
-
 <ul>
-<li>kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z &ndash;hard również usuwa zmiany z plików)</li>
-</ul>
-</li>
+<li>Kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z --hard również usuwa zmiany z plików).</li>
+</ul></li>
 <li>gitk -all</li>
-<li>git branch &ndash;merged</li>
-<li>git branch &ldquo;branch&rdquo; &ldquo;commit hash&rdquo;</li>
-<li>git pull &ldquo;remote&rdquo; &ldquo;branch&rdquo;</li>
-<li>git config &ndash;global user.email &ldquo;&rdquo;
-
+<li>git branch --merged</li>
+<li>git branch "branch" "commit hash" </li>
+<li>git pull "remote" "branch"</li>
+<ul><li>Pobiera zmiany z podanej gałęzi na  podanym zdalnym repozytorium.Przydatne gdy chcemy pobrać aktualne zmiany z zdalnej gałęzi. </li></ul>
+<li>git config --global user.email ""
 <ul>
-<li>ustawia globalną wartość email</li>
-</ul>
-</li>
-<li>git diff &ndash;staged
-
+<li>Ustawia globalną wartość email.</li>
+</ul></li>
+<li>git diff --staged
 <ul>
-<li>porównuje zmiany</li>
-</ul>
-</li>
-<li>git checkout -b &ldquo;branch&rdquo;
-
+<li>Pozwala zobaczyć zawartość poczekalni, która trafi do repozytorium z najbliższym zatwierdzeniem. </li>
+</ul></li>
+<li>git checkout -b "branch"
 <ul>
 <li>to samo co git checkout ale do tego przechodzi na nowo utworzony branch (zamiast przechodzenia do stanu detached)</li>
-</ul>
-</li>
-<li>git log &ndash;graph &ndash;all</li>
-<li>git branch -d &ldquo;branch&rdquo;</li>
-<li>git fetch &ldquo;remote&rdquo; &ldquo;branch&rdquo;
-
+</ul></li>
+<li>git log --graph --all</li>
+  <ul><li>Narysuj graficzną reprezentację historii zatwierdzeń po lewej stronie wyjścia. Może to spowodować wydrukowanie dodatkowych linii pomiędzy zatwierdzeniami, aby historia wykresów była poprawnie rysowana</li></ul>
+<li>git branch -d "branch"</li>
+  <ul><li>usunie wskazaną gałąź, jeśli gałąź ma obecnie reflog, wówczas również reflog zostanie usunięty.</li></ul>
+<li>git fetch "remote" "branch"
 <ul>
 <li>ściąga zmiany wprowadzone na serwerze remote na gałęzi branch lecz jeszcze nich nie wprowadza (do tego należy wywołać git merge lub git rebase)</li>
-</ul>
-</li>
-<li>git config &ndash;global color.ui true</li>
-<li>git commit &ldquo;filename&rdquo;</li>
+</ul></li>
+<li>git config --global color.ui true</li>
+<li>git commit "filename"</li>
+<ul><li>dodaje zmiany wprowadzone w podanym pliku (tu: "filename") do aktualnej zawartości indeksu i pyta użytkownika o wprowadzenie wiadomości, opisującej wprowadzone zmiany
+</ul></li>
 <li>git branch -v</li>
-<li>git push &ldquo;remote&rdquo; &ldquo;branch&rdquo;</li>
-<li>git log &ldquo;branch&rdquo; &ndash;not &ldquo;branch&rdquo;</li>
+<li>git push "remote" "branch"</li>
+<li>git log "branch" --not "branch"</li>
 <li>git bisect (start, bad, good, reset)</li>
-<li><p>git commit -a -m &ldquo;&rdquo;</p>
-
+<li>git commit -a -m ""</li>
+    <ul>
+    <li>Zatwierdza zmiany we wszystkich plikach katalogu roboczego. Dodatkowo dodaje pustą wiadomość jako komentarz do commita. </li>
+    </ul>
+<li>git add .
+<ul><li>kopiuje wszystkie pliki (w ich aktualnym stanie) z katalogu robczego do przechowalni (stage)
+</li></ul>
 <ul>
 <li>dodaje zmiany z wszystkich plików znajdujących się w indeksie, usuwa z indeksu pliki usunięte z projektu, a także umożliwia dodanie wiadomości do commita. W zupełności wystarcza do zacommitowania w większości przypadków.</li>
 <li>przykład użycia: git commit -a -m &ldquo;Update README.md&rdquo;</li>
@@ -67,24 +65,20 @@
 <li><p>git add .</p>
 
 <ul>
-<li> rejestruje wszystkie ostatnio wprowadzone zmiany w danym folderze i podfolderach</li>
-</ul>
-</li>
-<li>git checkout &ldquo;branch&rdquo;
-
+<li>Przechodzi na podany branch. </li>
+</ul></li>
+<li>git remote add "remote_name" "git url"
 <ul>
-<li>przechodzi na podany branch</li>
-</ul>
-</li>
-<li>git remote add &ldquo;remote_name&rdquo; &ldquo;git url&rdquo;
+<li>Rejestruje nowy server z git'em którego można potem używać. </li>
+</ul></li>
+<li>git blame -C "filename"</li>
+  <ul>
+  <li>używa się jej do określenia, kiedy dokonano pewnej zmiany i kto jej wykonał.
+    Parametr -C wykryje linie przeniesione lub skopiowane z innych plików, które zostały zmodyfikowane w tym samym zatwierdzeniu.
+  </li>
+  </ul>
+<li>git branch "name"</li>
 
-<ul>
-<li>rejestruje nowy server z git'em którego można potem używać</li>
 </ul>
-</li>
-<li>git blame -C &ldquo;filename&rdquo;</li>
-<li>git branch &ldquo;name&rdquo;</li>
-</ul>
-
 </body>
 </html>
