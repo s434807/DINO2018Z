@@ -1,17 +1,17 @@
 Wszystkie grupy
 
  - git config --global user.name ""
-     - ustawia globalną nazwę użytkownika 
+     - ustawia globalną nazwę użytkownika 
  - git reset HEAD
-     - kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z --hard również usuwa zmiany z plików)
+     - kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z --hard również usuwa zmiany z plików)
  - gitk -all
  - git branch --merged
  - git branch "branch" "commit hash" 
  - git pull "remote" "branch"
  - git config --global user.email ""
-    - ustawia globalną wartość email
+    - ustawia globalną wartość email
  - git diff --staged
-    - porównuje zmiany  
+    - porównuje zmiany
  - git checkout -b "branch"
     - to samo co git checkout ale do tego przechodzi na nowo utworzony branch (zamiast przechodzenia do stanu detached)
  - git log --graph --all
@@ -21,10 +21,14 @@ Wszystkie grupy
  - git config --global color.ui true
  - git commit "filename"
  - git branch -v
+   - pozwala obejrzeć ostatni zatwierdzony zestaw zmian na każdej z gałęzi
  - git push "remote" "branch"
  - git log "branch" --not "branch"
  - git bisect (start, bad, good, reset)
  - git commit -a -m ""
+     - dodaje zmiany z wszystkich plików znajdujących się w indeksie, usuwa z indeksu pliki usunięte z projektu, a także umożliwia dodanie wiadomości do commita. W zupełności wystarcza do zacommitowania w większości przypadków.
+     - przykład użycia: git commit -a -m "Update README.md"
+     
  - git add .
      -  rejestruje wszystkie ostatnio wprowadzone zmiany w danym folderze i podfolderach
  - git checkout "branch"
