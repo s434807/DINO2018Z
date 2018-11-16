@@ -32,7 +32,7 @@
 </ul></li>
 <li>git checkout -b "branch"
 <ul>
-<li>To samo co git checkout ale do tego przechodzi na nowo utworzony branch. (zamiast przechodzenia do stanu detached)</li>
+<li>to samo co git checkout ale do tego przechodzi na nowo utworzony branch (zamiast przechodzenia do stanu detached)</li>
 </ul></li>
 <li>git log --graph --all</li>
   <ul><li>Narysuj graficzną reprezentację historii zatwierdzeń po lewej stronie wyjścia. Może to spowodować wydrukowanie dodatkowych linii pomiędzy zatwierdzeniami, aby historia wykresów była poprawnie rysowana</li></ul>
@@ -40,7 +40,7 @@
   <ul><li>usunie wskazaną gałąź, jeśli gałąź ma obecnie reflog, wówczas również reflog zostanie usunięty.</li></ul>
 <li>git fetch "remote" "branch"
 <ul>
-<li>Ściąga zmiany wprowadzone na serwerze remote na gałęzi branch lecz jeszcze nich nie wprowadza. (do tego należy wywołać git merge lub git rebase)</li>
+<li>ściąga zmiany wprowadzone na serwerze remote na gałęzi branch lecz jeszcze nich nie wprowadza (do tego należy wywołać git merge lub git rebase)</li>
 </ul></li>
 <li>git config --global color.ui true</li>
 <li>git commit "filename"</li>
@@ -50,9 +50,6 @@
 <li>git push "remote" "branch"</li>
 <li>git log "branch" --not "branch"</li>
 <li>git bisect (start, bad, good, reset)</li>
-<ul><li>komenda bisect wykonuje binarne szukanie przez Twoją historię commitów, aby pomóc Ci zidentyfikować tak szybko jak się da, który commit wprowadził błąd. Start rozpoczyna, vad określa, że commit jest zepsuty, good wskazuje ostatnią poprawną wersję, a reset jak nazwa wzkazuje resetuje 
-</li></ul>
-<ul>
 <li>git commit -a -m ""</li>
     <ul>
     <li>Zatwierdza zmiany we wszystkich plikach katalogu roboczego. Dodatkowo dodaje pustą wiadomość jako komentarz do commita. </li>
@@ -61,9 +58,12 @@
 <ul><li>kopiuje wszystkie pliki (w ich aktualnym stanie) z katalogu robczego do przechowalni (stage)
 </li></ul>
 <ul>
-<li>Rejestruje wszystkie ostatnio wprowadzone zmiany w danym folderze i podfolderach.</li>
-</ul></li>
-<li>git checkout "branch"
+<li>dodaje zmiany z wszystkich plików znajdujących się w indeksie, usuwa z indeksu pliki usunięte z projektu, a także umożliwia dodanie wiadomości do commita. W zupełności wystarcza do zacommitowania w większości przypadków.</li>
+<li>przykład użycia: git commit -a -m &ldquo;Update README.md&rdquo;</li>
+</ul>
+</li>
+<li><p>git add .</p>
+
 <ul>
 <li>Przechodzi na podany branch. </li>
 </ul></li>
