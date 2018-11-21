@@ -24,6 +24,9 @@
 </ul></li>
 <li>gitk -all</li>
 <li>git branch --merged</li>
+  <ul>
+    <li>Pokazuje gałęzie, które zostały już dołączone.</li>
+  </ul>
 <li>git branch "branch" "commit hash" </li>
 <li>git pull "remote" "branch"</li>
 <ul><li>Pobiera zmiany z podanej gałęzi na  podanym zdalnym repozytorium.Przydatne gdy chcemy pobrać aktualne zmiany z zdalnej gałęzi. </li></ul>
@@ -58,8 +61,16 @@
 </ul></li>
 <li>git branch -v</li>
 <li>git push "remote" "branch"</li>
+  <ul>
+    <li>Aktualizuje zdalne pliki referencyjne za pomocą lokalnych odwołań, jednocześnie wysyłając obiekty niezbędne do wypełnienia podanych informacji.</li>
+  </ul>
 <li>git log "branch" --not "branch"</li>
 <li>git bisect (start, bad, good, reset)</li>
+  <ul>
+    <li>
+       Ta komenda używa binarnego algorytmu wyszukiwania, aby znaleźć zatwierdzenie w historii projektu. Używasz go, najpierw informując o "złym" zatwierdzeniu, które zawiera błąd, i wprowadzając "dobre" zatwierdzenie, o którym wiadomo, że było przed wystąpieniem błędu. Następnie git bisect wybiera commit pomiędzy tymi dwoma punktami końcowymi i pyta, czy wybrany commit jest "dobry" czy "zły". Kontynuuje zawężanie zakresu, aż znajdzie dokładne zatwierdzenie, które wprowadziło zmianę.
+    </li>
+  </ul>
 <li>git commit -a -m ""</li>
     <ul>
     <li>Zatwierdza zmiany we wszystkich plikach katalogu roboczego. Dodatkowo dodaje pustą wiadomość jako komentarz do commita. </li>
